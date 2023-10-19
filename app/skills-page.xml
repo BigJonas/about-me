@@ -1,0 +1,3 @@
+<Page navigatingTo="onNavigatingTo">
+  <Button text="Go Back" tap="goBack"/>
+</Page>

@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="About Me" icon="" />
+    <ScrollView>
+        <StackLayout>
+            <!-- Header -->
+            <Label text="About Me" class="text-3xl" textAlignment="center" marginBottom="20"/>
+            <!-- Shoutout Lorem Picsum for free random pictures -->
+            <GridLayout columns="*, *" rows="*, *, *">
+                <!-- Row 1: Bio -->
+                <!-- Add Percent Margins Doofus -->
+                <Label text="Bio" class="text-2xl" textAlignment="center" row="0" col="1"/>
+                <Image src="https://picsum.photos/300/200" row="0" col="0" marginBottom="10" tap="bioNav"/>
+                <!-- Row 2: Skills and Hobbies -->
+                <Label text="Skills &amp; Hobbies" class="text-2xl" textAlignment="center" textWrap="true" row="1" col="0"/>
+                <Image src="https://picsum.photos/300/200" row="1" col="1" marginBottom="10" tap="skillsNav"/>
+                <!-- Row 3: Contact Me -->
+                <Label text="Contact Me" class="text-2xl" textAlignment="center" row="2" col="1"/>
+                <Image src="https://picsum.photos/300/200" row="2" col="0" marginBottom="10" tap="contactNav"/>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+    <!-- <StackLayout class="p-4">
+        <Label text="Please tap me" class="text-3xl text-center" />
+        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+    </StackLayout> -->
+</Page>
