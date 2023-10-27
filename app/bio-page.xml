@@ -1,39 +1,69 @@
 <Page navigatingTo="onNavigatingTo">
   <ScrollView>
     <StackLayout>
+      <!-- Header -->
+      <Label 
+        text="Bio" 
+        class="text-3xl text-center mb-1"/>
+      <!-- Content -->
       <GridLayout columns="*, *" rows="*, *, *, *">
         <!-- Row 1-3 & Column 1 Exposition -->
+        <!-- Have to use silly direct css line-height because nativescript likes to make line spaces big -->
         <Label 
           text="My name is Jonas Garibay. I was born in Fort Campbell, Kentucky raised in Tacoma, Washington"
+          class="text-base mx-2 my-1"
+          style="line-height: 4px"
           textWrap="true"
+          verticalAlignment="top"
           row="0" col="0"/>
         <Label 
-          text="I took a liking to computer science in middle school taking my first class in 8th grade.  Fast forward to senior year I’m the programming co-lead of my robotics team."
+          text="I took my first computer science class in 8th grade being my favorite by far. Fast forward to senior year I’m the programming co-lead of my robotics team."
+          class="text-base mx-2 my-1"
+          style="line-height: 4px"
           textWrap="true"
+          verticalAlignment="top"
           row="1" col="0"/>
         <Label 
-          text="Back in elementary school my mom bought me my first video game console, the Nintendo Wii. And after countless hours I finally beat Lego Batman 2. Ever since that, moment I’ve been hooked."
+          text="Back in elementary school my mom bought me my first video game console, the Nintendo Wii. Ever since that beating my first game, I’ve been hooked."
+          class="text-base mx-2 my-1"
+          style="line-height: 4px"
           textWrap="true"
+          verticalAlignment="top"
           row="2" col="0"/>
         <!-- Row 1-3 & Column 2 Picture / More Exposition -->
         <StackLayout row="0" col="1" rowSpan="2">
-          <Image src="~/images/lil-me.jpg"/>
+          <Image 
+            src="~/images/lil-me.jpg"
+            class="rounded-md mx-2 mt-1"/>
           <Label 
             text="Fun fact: I’m named after a Weezer song, 10 points if you know it."
+            class="text-xs italic mx-2 mb-1"
+            style="line-height: 2px"
             textWrap="true"/>
         </StackLayout>
         <Label 
-          text="Some of my personal favorite video games are Minecraft, Terraria, Osu!, Etterna, and Ultrakill."
+          text="My favorite genre of games have to be stale-water skill games. Some of my all time favorite video games are Minecraft, Osu!, Etterna, and Ultrakill."
+          class="text-base mx-2 my-1"
+          style="line-height: 4px"
           textWrap="true"
+          verticalAlignment="top"
           row="2" col="1"/>
         <!-- Row 4 & Column 1-2 Gamer Setup-->
         <StackLayout row="4" col="0" colSpan="2">
-          <Image src="~/images/gamer-setup.jpg"/>
+          <Image 
+            src="~/images/gamer-setup.jpg"
+            class="rounded-md mx-2 mt-1"/>
           <Label 
-            text="Current dorm gamer setup"/>
+            text="Current dorm gamer setup"
+            class ="text-xs italic mx-2 mb-2"
+            style="line-height: 4px"/>
         </StackLayout>
       </GridLayout>
-      <Button text="Go Back" tap="goBack"/>
+      <!-- No idea why this button does not have a background color for me -->
+      <Button 
+        text="Go Back" 
+        class="bg-indigo-500 text-white font-bold py-2 px-4 rounded"
+        tap="goBack"/>
     </StackLayout>
   </ScrollView>
 </Page>
