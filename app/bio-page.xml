@@ -1,3 +1,38 @@
 <Page navigatingTo="onNavigatingTo">
-  <Button text="Go Back" tap="goBack"/>
+  <ScrollView>
+    <StackLayout>
+      <GridLayout columns="*, *" rows="*, *, *, *">
+        <!-- Row 1-3 & Column 1 Exposition -->
+        <Label 
+          text="My name is Jonas Garibay. I was born in Fort Campbell, Kentucky raised in Tacoma, Washington"
+          textWrap="true"
+          row="0" col="0"/>
+        <Label 
+          text="I took a liking to computer science in middle school taking my first class in 8th grade.  Fast forward to senior year I’m the programming co-lead of my robotics team."
+          textWrap="true"
+          row="1" col="0"/>
+        <Label 
+          text="Back in elementary school my mom bought me my first video game console, the Nintendo Wii. And after countless hours I finally beat Lego Batman 2. Ever since that, moment I’ve been hooked."
+          textWrap="true"
+          row="2" col="0"/>
+        <!-- Row 1-3 & Column 2 Picture / More Exposition -->
+        <StackLayout row="0" col="1" rowSpan="2">
+          <Image src="https://picsum.photos/200/300"/>
+          <Label 
+            text="Fun fact: I’m named after a Weezer song, 10 points if you know it."/>
+        </StackLayout>
+        <Label 
+          text="Some of my personal favorite video games are Minecraft, Terraria, Osu!, Etterna, and Ultrakill."
+          textWrap="true"
+          row="2" col="1"/>
+        <!-- Row 4 & Column 1-2 Gamer Setup-->
+        <StackLayout row="4" col="0" colSpan="2">
+          <Image src="https://picsum.photos/300/200"/>
+          <Label 
+            text="Current dorm gamer setup"/>
+        </StackLayout>
+      </GridLayout>
+      <Button text="Go Back" tap="goBack"/>
+    </StackLayout>
+  </ScrollView>
 </Page>
