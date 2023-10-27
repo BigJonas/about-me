@@ -14,7 +14,7 @@
                     textAlignment="center" 
                     row="0" col="1"/>
                 <Image 
-                    src="https://picsum.photos/300/200" 
+                    src="~/images/big-me.jpg" 
                     marginBottom="10" tap="bioNav"
                     row="0" col="0"/>
                 <!-- Row 2: Skills and Hobbies -->

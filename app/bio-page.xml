@@ -17,9 +17,10 @@
           row="2" col="0"/>
         <!-- Row 1-3 & Column 2 Picture / More Exposition -->
         <StackLayout row="0" col="1" rowSpan="2">
-          <Image src="https://picsum.photos/200/300"/>
+          <Image src="~/images/lil-me.jpg"/>
           <Label 
-            text="Fun fact: I’m named after a Weezer song, 10 points if you know it."/>
+            text="Fun fact: I’m named after a Weezer song, 10 points if you know it."
+            textWrap="true"/>
         </StackLayout>
         <Label 
           text="Some of my personal favorite video games are Minecraft, Terraria, Osu!, Etterna, and Ultrakill."
@@ -27,7 +28,7 @@
           row="2" col="1"/>
         <!-- Row 4 & Column 1-2 Gamer Setup-->
         <StackLayout row="4" col="0" colSpan="2">
-          <Image src="https://picsum.photos/300/200"/>
+          <Image src="~/images/gamer-setup.jpg"/>
           <Label 
             text="Current dorm gamer setup"/>
         </StackLayout>
