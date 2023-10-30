@@ -3,16 +3,20 @@
     <ScrollView>
         <StackLayout>
             <!-- Header -->
-            <Label text="About Me" class="text-3xl" textAlignment="center" marginBottom="20"/>
+            <Label 
+                text="About Me" 
+                class="text-3xl text-center mb-1" />
             <!-- Shoutout Lorem Picsum for free random pictures -->
+            <!-- Kinda janky stacked grid layout so you can click the area around the image and text -->
             <!-- Row 1: Bio -->
             <GridLayout 
                 columns="*, *" rows="*"
+                class="rounded-lg m-1"
+                backgroundColor="grey"
                 tap="bioNav">
                 <Image 
                     src="~/images/big-me.jpg" 
-                    class="rounded m-2"
-                    width="48%"
+                    class="object-fill"
                     row="0" col="0"/>
                 <Label 
                     text="Bio" 
@@ -22,6 +26,8 @@
             <!-- Row 2: Skills and Hobbies -->
             <GridLayout
                 columns="*, *" rows="*"
+                class="rounded-lg m-1"
+                backgroundColor="grey"
                 tap="skillsNav">
                 <Label 
                     text="Skills &amp; Hobbies" 
@@ -30,13 +36,14 @@
                     row="0" col="0"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    class="rounded m-2"
-                    width="48%"
+                    class="object-fill"
                     row="0" col="1"/>
             </GridLayout>
             <!-- Row 3: Contact Me -->
             <GridLayout
                 columns="*, *" rows="*"
+                class="rounded-lg m-1"
+                backgroundColor="grey"
                 tap="contactNav">
                 <Label 
                     text="Contact Me" 
@@ -44,8 +51,7 @@
                     row="0" col="1"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    class="rounded m-1"
-                    width="48%"
+                    class="ojbect-fill"
                     row="0" col="0"/>
             </GridLayout>
         </StackLayout>
