@@ -5,39 +5,48 @@
             <!-- Header -->
             <Label text="About Me" class="text-3xl" textAlignment="center" marginBottom="20"/>
             <!-- Shoutout Lorem Picsum for free random pictures -->
-            <GridLayout columns="*, *" rows="*, *, *">
-                <!-- Row 1: Bio -->
-                <!-- Add Percent Margins Doofus -->
-                <Label 
-                    text="Bio" 
-                    class="text-2xl text-center" 
-                    row="0" col="1"/>
+            <!-- Row 1: Bio -->
+            <GridLayout 
+                columns="*, *" rows="*"
+                tap="bioNav">
                 <Image 
                     src="~/images/big-me.jpg" 
-                    class="h-auto max-w-md rounded m-1"
-                    tap="bioNav"
+                    class="rounded m-2"
+                    width="48%"
                     row="0" col="0"/>
-                <!-- Row 2: Skills and Hobbies -->
+                <Label 
+                    text="Bio" 
+                    class="text-2xl text-center"
+                    row="0" col="1"/>
+            </GridLayout>
+            <!-- Row 2: Skills and Hobbies -->
+            <GridLayout
+                columns="*, *" rows="*"
+                tap="skillsNav">
                 <Label 
                     text="Skills &amp; Hobbies" 
-                    class="text-2xl text-center" 
-                    textWrap="true" 
-                    row="1" col="0"/>
+                    class="text-2xl text-center"
+                    textWrap="true"
+                    row="0" col="0"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    class="h-auto max-w rounded m-1"
-                    tap="skillsNav"
-                    row="1" col="1"/>
-                <!-- Row 3: Contact Me -->
+                    class="rounded m-2"
+                    width="48%"
+                    row="0" col="1"/>
+            </GridLayout>
+            <!-- Row 3: Contact Me -->
+            <GridLayout
+                columns="*, *" rows="*"
+                tap="contactNav">
                 <Label 
                     text="Contact Me" 
                     class="text-2xl text-center" 
-                    row="2" col="1"/>
+                    row="0" col="1"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    class="h-auto max-w rounded m-1"
-                    tap="contactNav"
-                    row="2" col="0"/>
+                    class="rounded m-1"
+                    width="48%"
+                    row="0" col="0"/>
             </GridLayout>
         </StackLayout>
     </ScrollView>
