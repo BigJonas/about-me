@@ -10,39 +10,35 @@
                 <!-- Add Percent Margins Doofus -->
                 <Label 
                     text="Bio" 
-                    class="text-2xl" 
-                    textAlignment="center" 
+                    class="text-2xl text-center" 
                     row="0" col="1"/>
                 <Image 
                     src="~/images/big-me.jpg" 
-                    marginBottom="10" tap="bioNav"
+                    class="my-1"
+                    tap="bioNav"
                     row="0" col="0"/>
                 <!-- Row 2: Skills and Hobbies -->
                 <Label 
                     text="Skills &amp; Hobbies" 
-                    class="text-2xl" 
-                    textAlignment="center" textWrap="true" 
+                    class="text-2xl text-center" 
+                    textWrap="true" 
                     row="1" col="0"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    marginBottom="10" tap="skillsNav"
+                    class="my-1"
+                    tap="skillsNav"
                     row="1" col="1"/>
                 <!-- Row 3: Contact Me -->
                 <Label 
                     text="Contact Me" 
-                    class="text-2xl" 
-                    textAlignment="center" 
+                    class="text-2xl text-center" 
                     row="2" col="1"/>
                 <Image 
                     src="https://picsum.photos/300/200" 
-                    marginBottom="10" tap="contactNav"
+                    class="my-1"
+                    tap="contactNav"
                     row="2" col="0"/>
             </GridLayout>
         </StackLayout>
     </ScrollView>
-    <!-- <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
-    </StackLayout> -->
 </Page>
