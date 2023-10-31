@@ -1,8 +1,17 @@
 <Page navigatingTo="onNavigatingTo">
   <StackLayout>
-    <ListView id="skillList" itemTap="skillListNav">
+    <!-- Header -->
+    <Label 
+      text="Skills &amp; Hobbies" 
+      class="text-3xl text-center mb-1"/>
+    <!-- List of Skills -->
+    <ListView 
+      id="skillList" 
+      itemTap="skillListNav"
+      height="50%">
       <ListView.itemTemplate>
-        <GridLayout rows="*, *" columns="*, *">
+        <GridLayout 
+          rows="*, *" columns="*, *">
           <!-- Column 1 -->
           <Label 
             text="{{name}}" 
@@ -23,6 +32,7 @@
         </GridLayout>
       </ListView.itemTemplate>
     </ListView>
-    <!-- <Button text="Go Back" tap="goBack"/> -->
+    <!-- Go Back Button -->
+    <Button text="Go Back" tap="goBack"/>
   </StackLayout>
 </Page>
