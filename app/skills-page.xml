@@ -1,3 +1,28 @@
 <Page navigatingTo="onNavigatingTo">
-  <Button text="Go Back" tap="goBack"/>
+  <StackLayout>
+    <ListView id="skillList" itemTap="skillListNav">
+      <ListView.itemTemplate>
+        <GridLayout rows="*, *" columns="*, *">
+          <!-- Column 1 -->
+          <Label 
+            text="{{name}}" 
+            textWrap="true"
+            row="0" col="0"/>
+          <StackLayout
+            row="1" col="0">
+            <Image 
+              src="{{image}}"
+              width="75%"/>
+            <Label text=" {{imageLabel}}"/>
+          </StackLayout>
+          <!-- Column 2 -->
+          <Label 
+            text="{{description}}"
+            textWrap="true"
+            row="0" col="1" rowSpan="2"/>
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    <!-- <Button text="Go Back" tap="goBack"/> -->
+  </StackLayout>
 </Page>
