@@ -1,3 +1,86 @@
 <Page navigatingTo="onNavigatingTo">
+  <StackLayout>
+  <!-- Header -->
+  <Label 
+    text="Contact Me" 
+    class="text-3xl text-center mb-1"/>
+  <!-- Message Form -->
+  <GridLayout
+    rows="*, *, *, 2*, *, *" columns="*, *"
+    height="75%">
+    <!-- Row 1 First and Last Name-->
+    <StackLayout 
+      row="0" col="0">
+      <Label
+        text="First Name *"
+        class="text-sm italic ml-3"/>
+      <TextField
+        id="fName"
+        class="rounded"
+        backgroundColor="grey"/>
+    </StackLayout>
+    <StackLayout 
+      row="0" col="1">
+      <Label
+        text="Last Name *"
+        class="text-sm italic ml-3"/>
+      <TextField
+        id="lName"
+        class="text-base rounded"
+        backgroundColor="grey"/>
+    </StackLayout>
+    <!-- Row 2 Email -->
+    <StackLayout 
+      row="1" col="0" colSpan="2">
+      <Label
+        text="Email Address *"
+        class="text-sm italic ml-3"/>
+      <TextField
+        id="email"
+        keyboardType="email"
+        class="rounded"
+        backgroundColor="grey"/>
+    </StackLayout>
+    <!-- Row 3 Subject -->
+    <StackLayout 
+      row="2" col="0" colSpan="2">
+      <Label
+        text="Subject *"
+        class="text-sm italic ml-3"/>
+      <TextField
+        id="subject"
+        class="rounded"
+        backgroundColor="grey"/>
+    </StackLayout>
+    <!-- Row 4 Message Area -->
+    <StackLayout 
+      row="3" col="0" colSpan="2">
+      <Label
+        text="Your Message *"
+        class="text-sm italic ml-3"/>
+      <TextView
+        id="message"
+        class="rounded"
+        backgroundColor="grey"/>
+    </StackLayout>
+    <!-- Row 5 Submit Button -->
+    <Button 
+      text="Submit" 
+      tap="submitForm" 
+      class="rounded"
+      backgroundColor="grey"
+      row="4" col="0"/>
+    <!-- Row 6 Funny Monkey -->
+    <Image 
+      src="~/images/funny-monkey.jpg"
+      class="rounded-md mx-2 mt-1"
+      row="5" col="0"/>
+    <Label 
+      text="Write me a message! I love reading things. I will respond as soon as I can!"
+      textWrap="true"
+      row="5" col="1"/>
+  </GridLayout>
+  <!-- Go Back Button -->
   <Button text="Go Back" tap="goBack"/>
+  </StackLayout>
 </Page>
