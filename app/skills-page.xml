@@ -8,7 +8,7 @@
     <ListView 
       id="skillList" 
       itemTap="skillListNav"
-      height="50%">
+      height="75%">
       <ListView.itemTemplate>
         <GridLayout 
           rows="*, *" columns="*, *">
