@@ -13,7 +13,7 @@
       row="0" col="0">
       <Label
         text="First Name *"
-        class="text-sm italic ml-3"/>
+        class="text-sm italic ml-4"/>
       <TextField
         id="fName"
         class="rounded"
@@ -23,7 +23,7 @@
       row="0" col="1">
       <Label
         text="Last Name *"
-        class="text-sm italic ml-3"/>
+        class="text-sm italic ml-4"/>
       <TextField
         id="lName"
         class="text-base rounded"
@@ -34,7 +34,7 @@
       row="1" col="0" colSpan="2">
       <Label
         text="Email Address *"
-        class="text-sm italic ml-3"/>
+        class="text-sm italic ml-4"/>
       <TextField
         id="email"
         keyboardType="email"
@@ -46,7 +46,7 @@
       row="2" col="0" colSpan="2">
       <Label
         text="Subject *"
-        class="text-sm italic ml-3"/>
+        class="text-sm italic ml-4"/>
       <TextField
         id="subject"
         class="rounded"
@@ -57,7 +57,7 @@
       row="3" col="0" colSpan="2">
       <Label
         text="Your Message *"
-        class="text-sm italic ml-3"/>
+        class="text-sm italic ml-4"/>
       <TextView
         id="message"
         class="rounded"
