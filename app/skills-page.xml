@@ -15,19 +15,26 @@
           <!-- Column 1 -->
           <Label 
             text="{{name}}" 
+            class="text-xl"
             textWrap="true"
             row="0" col="0"/>
           <StackLayout
             row="1" col="0">
             <Image 
               src="{{image}}"
-              width="75%"/>
-            <Label text=" {{imageLabel}}"/>
+              width="85%"/>
+            <Label 
+              text=" {{imageLabel}}"
+              class="text-xs italic"
+              style="line-height: 2px"
+              textWrap="true"/>
           </StackLayout>
           <!-- Column 2 -->
           <Label 
             text="{{description}}"
             textWrap="true"
+            class="text-base"
+            style="line-height: 4px"
             row="0" col="1" rowSpan="2"/>
         </GridLayout>
       </ListView.itemTemplate>

@@ -32,9 +32,9 @@ export function onNavigatingTo(args) {
     },
     {
       name: 'Rhythm Gamer',
-      description: 'I play rhythm games at an above average skill level. I used to be a lot better but I am getting back into them',
+      description: 'I play rhythm games at an above average skill level. I used to be a lot better but I am getting back into them. ',
       image: '~/images/osu-gamer.jpg',
-      imageLabel: 'Game is osu! standard. I am not the person in the picture'
+      imageLabel: 'Game is osu! standard. I am not the person in the picture (my posture isnt that bad)'
     },
   ]);
 
