@@ -24,6 +24,18 @@ export function onNavigatingTo(args) {
       image: '~/images/keyboard.jpg',
       imageLabel: 'I dont have any good pictures of my keyboard so here is one I found online.'
     },
+    {
+      name: 'Typist',
+      description: 'Not only do I build keyboards but I also type on them !! When I got my first good keyboard I was inspired to actually learn to type instead of two finger chicken peck and made decent results.',
+      image: '~/images/typing-speed.png',
+      imageLabel: 'Recent Monkeytype test, almost personal best 0.8 WPM off'
+    },
+    {
+      name: 'Rhythm Gamer',
+      description: 'I play rhythm games at an above average skill level. I used to be a lot better but I am getting back into them',
+      image: '~/images/osu-gamer.jpg',
+      imageLabel: 'Game is osu! standard. I am not the person in the picture'
+    },
   ]);
 
   listView.items = itemList;
